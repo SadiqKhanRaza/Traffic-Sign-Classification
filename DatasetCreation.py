@@ -60,6 +60,6 @@ for directory in directories:
 X_validate = np.array(X_validate)
 y_validate = np.array(y_validate)
 print(X_validate.shape)
-print('test done')
+print('valid done')
 
 np.savez('dataset/final_dataset001',X_train=X_train,y_train=y_train,X_test=X_test,y_test=y_test,X_validate=X_validate,y_validate=y_validate)

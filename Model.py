@@ -1,4 +1,5 @@
 from keras.models import Sequential
+import matplotlib as plt
 from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Activation, Dropout, Lambda, BatchNormalization
 from keras.layers.advanced_activations import LeakyReLU
 def make_model():
@@ -26,6 +27,6 @@ def make_model():
     model.add(LeakyReLU(0.1))
     model.add(Dropout(0.5))
     model.add(BatchNormalization())
-    model.add(Dense(output_dim=43))
+    model.add(Dense(output_dim=2))
     model.add(Activation("softmax"))
     return model
